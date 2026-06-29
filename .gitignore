@@ -1,0 +1,16 @@
+# Model weights
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Streamlit
+.streamlit/
+
+# Notebook cache
+.ipynb_checkpoints/

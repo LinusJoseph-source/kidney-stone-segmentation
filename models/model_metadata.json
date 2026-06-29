@@ -1,0 +1,9 @@
+{
+  "model_name": "final_model",
+  "optimal_threshold": 0.3,
+  "test_dice": 0.855118214730114,
+  "test_iou": 0.7713584854639474,
+  "normalization": "ImageNet",
+  "input_size": "256x256",
+  "architecture": "ResNet50 as encoder with UNet as decoder"
+}
