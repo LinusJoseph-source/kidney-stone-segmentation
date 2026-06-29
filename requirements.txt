@@ -5,3 +5,4 @@ opencv-python==4.8.1.78
 numpy==1.26.4
 Pillow==10.0.1
 matplotlib==3.7.2
+requests==2.31.0

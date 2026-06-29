@@ -45,6 +45,7 @@ IoU: 0.771
 
 Install dependencies:
 pip install -r requirements.txt
+
 Run:
 streamlit run streamlit_app.py
 

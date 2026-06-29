@@ -1,6 +1,7 @@
 #Kidney Stone Detection - Streamlit App
 
 import os
+import requests
 import json
 import torch
 import cv2
@@ -21,6 +22,16 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     model_path = "models/final_model.pth"
+    model_url = "https://github.com/LinusJoseph-source/kidney-stone-segmentation/releases/download/v1.0.0/final_model.pth"
+
+    if not os.path.exists(model_path):
+        os.makedirs("models", exist_ok=True)
+
+        response = requests.get(model_url)
+
+        with open(model_path, "wb") as f:
+            f.write(response.content)
+
     metadata_path = "models/model_metadata.json"
     with open(metadata_path, 'r') as f:
         metadata = json.load(f)
